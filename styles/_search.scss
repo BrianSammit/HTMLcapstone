@@ -4,7 +4,7 @@
 =======================================
 */
 
-$principal-color: rgb(214, 66, 61);
+$principal-color: rgb(225, 126, 101);
 $grey-transparent: rgba(230, 230, 230, 0.7);
 
 /*
@@ -199,6 +199,7 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
     }
 
     .steps {
+      margin: 30px 0;
       width: 100%;
       display: flex;
       flex-direction: column;
