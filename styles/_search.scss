@@ -1,0 +1,200 @@
+/*
+=======================================
+    varibles
+=======================================
+*/
+
+$principal-color: rgb(214, 66, 61);
+$grey-transparent: rgba(230, 230, 230, 0.7);
+
+/*
+========================================
+     nav bar 
+========================================
+*/
+
+.nav {
+  flex-direction: column;
+  background-color: $principal-color;
+  color: white;
+  height: 20vh;
+  width: 100%;
+
+  .logo {
+    align-content: center;
+    margin: auto;
+    padding-top: 10px;
+
+    i {
+      font-size: 30px;
+      margin: 5px;
+    }
+
+    p {
+      align-self: center;
+      font-size: 20px;
+    }
+  }
+
+  .icons-nav {
+    margin: auto;
+    ul {
+      list-style: none;
+
+      li {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    height: 10vh;
+    padding-bottom: 10px;
+    flex-direction: row;
+  }
+}
+
+/*
+========================================
+     main
+========================================
+*/
+
+.main {
+  header {
+    justify-content: center;
+    align-content: center;
+    background-image: url(../img/gym.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+
+    h1 {
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    form {
+      background-color: $grey-transparent;
+      padding: 3%;
+      border-radius: 10px;
+      margin: 0 5%;
+
+      h2 {
+        text-transform: uppercase;
+        color: rgb(66, 66, 66);
+      }
+
+      div {
+        flex-direction: column;
+      }
+
+      input,
+      button {
+        padding-left: 10px;
+        height: 40px;
+        border-radius: 3px;
+        box-shadow: none;
+        border: none;
+        margin: 5px 0;
+      }
+
+      input {
+        color: black;
+      }
+
+      .search-but {
+        text-transform: uppercase;
+        color: white;
+        background-color: $principal-color;
+      }
+    }
+
+    .how-it {
+      color: rgb(66, 66, 66);
+      background-color: $grey-transparent;
+      border-radius: 3px;
+      box-shadow: none;
+      border: none;
+      width: fit-content;
+      margin: 10% 0 0 15%;
+      padding: 5px;
+    }
+  }
+
+  .steps {
+    display: none;
+    width: 100%;
+
+    h3 {
+      color: $principal-color;
+      margin: 5% auto;
+    }
+
+    div {
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      img {
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    header {
+      height: 70vh;
+      align-content: center;
+      justify-content: center;
+
+      form {
+        margin: 0 auto;
+        width: 65%;
+
+        div {
+          flex-direction: row;
+
+          input {
+            width: 70%;
+          }
+
+          .search-but {
+            width: 20%;
+          }
+        }
+      }
+
+      .how-it {
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 0;
+      }
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $principal-color;
+        margin: 5% auto;
+      }
+
+      div {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        img {
+          height: 64px;
+          width: 64px;
+        }
+      }
+    }
+  }
+}
