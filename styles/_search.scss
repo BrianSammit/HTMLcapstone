@@ -44,6 +44,10 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
 
       li {
         padding: 10px 20px;
+
+        p {
+          display: none;
+        }
       }
     }
   }
@@ -57,6 +61,20 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
     .logo {
       p {
         font-size: 22px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .icons-nav {
+      margin: auto;
+      ul {
+        li {
+          p {
+            text-transform: uppercase;
+            display: inline;
+          }
+        }
       }
     }
   }
@@ -181,8 +199,10 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
     }
 
     .steps {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
 
       h3 {
         color: $principal-color;
@@ -191,29 +211,43 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
         text-transform: uppercase;
       }
 
-      div {
-        margin: auto;
-        padding: 20px;
-        width: 95%;
+      .steps-1 {
         flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(66, 66, 66);
-
-        img {
-          height: 50px;
-          width: 50px;
-        }
-
-        h4 {
+        div {
           padding: 20px;
-          font-size: 22px;
-        }
+          width: 95%;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(66, 66, 66);
 
-        p {
-          font-size: 16px;
+          img {
+            height: 50px;
+            width: 50px;
+          }
+
+          h4 {
+            padding: 20px;
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .steps {
+      .steps-1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        div {
+          width: 46%;
         }
       }
     }
