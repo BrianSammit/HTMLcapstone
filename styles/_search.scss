@@ -4,8 +4,8 @@
 =======================================
 */
 
-$principal-color: rgb(225, 126, 101);
-$grey-transparent: rgba(230, 230, 230, 0.7);
+$principal-color: rgb(211, 86, 73);
+$grey-transparent: rgba(207, 203, 203, 0.7);
 
 /*
 ========================================
@@ -153,8 +153,46 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
   }
 
   .steps {
-    display: none;
+    margin: 30px 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      color: $principal-color;
+      margin: 5% auto;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .steps-1 {
+      flex-direction: column;
+      div {
+        padding: 20px;
+        width: 95%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(66, 66, 66);
+
+        img {
+          height: 50px;
+          width: 50px;
+        }
+
+        h4 {
+          padding: 20px;
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
   }
 
   @media (min-width: 768px) {
@@ -262,10 +300,70 @@ $grey-transparent: rgba(230, 230, 230, 0.7);
 */
 
 footer {
-  display: none;
+  padding: 2px 0;
   background-color: black;
 
+  .container-footer {
+    width: 90%;
+    margin: auto;
+
+    .header-footer {
+      width: 100%;
+      margin: 30px 0;
+
+      ul {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgb(41, 41, 41);
+        border-bottom: 1px solid rgb(41, 41, 41);
+        list-style: none;
+        height: 50px;
+        padding: 10px 0;
+
+        .li-1 {
+          div {
+            flex-direction: column;
+            padding: 10px;
+          }
+        }
+
+        .li-2 {
+          div {
+            flex-direction: column;
+            padding: 10px;
+          }
+        }
+
+        li {
+          .fa-map-marker-alt {
+            background-color: black;
+            border-radius: 50%;
+            padding: 20px;
+            font-size: 25px;
+            border: 1px solid rgb(41, 41, 41);
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .middle-footer {
+      display: none;
+    }
+  }
+
+  .bottom-footer {
+    display: none;
+  }
+
   @media (min-width: 768px) {
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -279,15 +377,37 @@ footer {
         margin: 30px 10px 15px;
 
         ul {
-          justify-content: space-evenly;
           align-items: center;
+          justify-content: space-between;
           border-top: 1px solid rgb(41, 41, 41);
           border-bottom: 1px solid rgb(41, 41, 41);
           list-style: none;
           height: 30px;
 
-          li {
-            padding: 0 10px;
+          .li-1 {
+            div {
+              flex-direction: row;
+            }
+
+            .fa-map-marker-alt {
+              background-color: black;
+              border-radius: 50%;
+              padding: 20px;
+              font-size: 25px;
+              border: 1px solid rgb(41, 41, 41);
+            }
+
+            a {
+              text-decoration: none;
+              font-size: 15px;
+              color: white;
+            }
+          }
+
+          .li-2 {
+            div {
+              flex-direction: row;
+            }
 
             .fa-map-marker-alt {
               background-color: black;
@@ -307,6 +427,7 @@ footer {
       }
 
       .middle-footer {
+        display: flex;
         padding: 20px 0;
         text-align: center;
         width: 100%;
@@ -337,7 +458,7 @@ footer {
               width: 70%;
               background-color: black;
               padding-left: 10px;
-              border: 1px solid rgb(88, 88, 88);
+              border: 1px solid $grey-transparent;
               box-shadow: none;
             }
 
@@ -345,7 +466,7 @@ footer {
               margin-right: auto;
               font-size: 15px;
               color: white;
-              background-color: rgb(88, 88, 88);
+              background-color: $grey-transparent;
               border-radius: 3px;
               box-shadow: none;
               border: none;
@@ -358,6 +479,7 @@ footer {
     }
 
     .bottom-footer {
+      display: flex;
       width: 100%;
       background-color: rgb(49, 49, 49);
       justify-content: space-between;
