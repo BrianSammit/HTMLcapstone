@@ -88,8 +88,8 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
 .main {
   header {
+    align-items: center;
     justify-content: center;
-    align-content: center;
     background-image: url(../img/gym.jpg);
     background-size: cover;
     background-position-x: center;
@@ -108,7 +108,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
       background-color: $grey-transparent;
       padding: 3%;
       border-radius: 10px;
-      margin: 0 5%;
+      width: 90%;
 
       h2 {
         text-transform: uppercase;
@@ -147,21 +147,20 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
       box-shadow: none;
       border: none;
       width: fit-content;
-      margin: 10% 0 0 15%;
+      margin-top: 10%;
       padding: 5px;
     }
   }
 
   .steps {
-    margin: 30px 0;
-    width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    text-align: center;
 
     h3 {
       color: $principal-color;
-      margin: 5% auto;
+      margin: 5%;
       font-size: 20px;
       text-transform: uppercase;
     }
@@ -170,7 +169,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
       flex-direction: column;
       div {
         padding: 20px;
-        width: 95%;
+        width: 100%;
         flex-direction: column;
         justify-items: center;
         align-items: center;
@@ -195,18 +194,27 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
     }
   }
 
+  .info-main {
+    .find-gym {
+      background-color: $principal-color;
+    }
+
+    .near-gym {
+      background-color: rgb(152, 164, 165);
+    }
+
+    .a-a {
+      background-color: rgb(80, 155, 215);
+    }
+  }
+
   @media (min-width: 768px) {
     header {
-      height: 70vh;
-      align-content: center;
-      justify-content: center;
-
       h1 {
         font-size: 22px;
       }
 
       form {
-        margin: 0 auto;
         width: 65%;
 
         h2 {
@@ -217,63 +225,13 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
           flex-direction: row;
 
           input {
-            width: 70%;
+            width: 80%;
           }
 
           .search-but {
             font-size: 16px;
             padding-right: 15px;
             width: 20%;
-          }
-        }
-      }
-
-      .how-it {
-        font-size: 16px;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 0;
-      }
-    }
-
-    .steps {
-      margin: 30px 0;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      h3 {
-        color: $principal-color;
-        margin: 5% auto;
-        font-size: 20px;
-        text-transform: uppercase;
-      }
-
-      .steps-1 {
-        flex-direction: column;
-        div {
-          padding: 20px;
-          width: 95%;
-          flex-direction: column;
-          justify-items: center;
-          align-items: center;
-          text-align: center;
-          font-family: Arial, Helvetica, sans-serif;
-          color: rgb(66, 66, 66);
-
-          img {
-            height: 50px;
-            width: 50px;
-          }
-
-          h4 {
-            padding: 20px;
-            font-size: 22px;
-          }
-
-          p {
-            font-size: 16px;
           }
         }
       }
@@ -286,7 +244,8 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
         flex-direction: row;
         flex-wrap: wrap;
         div {
-          width: 46%;
+          width: 50%;
+          padding: 5%;
         }
       }
     }
