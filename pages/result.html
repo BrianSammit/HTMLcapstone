@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <script
       src="https://kit.fontawesome.com/8158ded79f.js"
       crossorigin="anonymous"
@@ -11,9 +11,9 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="img/favicon-32x32.png"
+      href="../img/favicon-32x32.png"
     />
-    <title>Search GYMS</title>
+    <title>GYMS</title>
   </head>
   <body>
     <nav class="nav flex">
@@ -24,8 +24,8 @@
       <div class="icons-nav">
         <ul class="flex">
           <li>
-            <a href="pages/result.html"><i class="fas fa-search"></i></a>
-            <p><a href="pages/result.html">Gyms</a></p>
+            <a href="../pages/result.html"><i class="fas fa-search"></i></a>
+            <p><a href="../pages/result.html">Gyms</a></p>
           </li>
           <li>
             <a href="#"><i class="far fa-user"></i></a>
@@ -42,89 +42,51 @@
         </ul>
       </div>
     </nav>
-    <main class="main flex-column">
-      <header class="header flex-column">
-        <h1 class="text-bold-20">
-          NearGYM your... your best way to healthy life.
-        </h1>
-        <form class="flex-column">
-          <h2 class="text-bold-20">Search by key word</h2>
-          <div class="flex">
-            <input type="text" name="keyword" placeholder="e.g. Bodytech" />
-            <a href="pages/result.html" class="button search-but text-bold-20"
-              >Search</a
-            >
+    <main>
+      <section>
+        <h2>Filter by name, country, type, price:</h2>
+        <form>
+          <div>
+            <label for="gym-name">Gym name</label>
+            <input type="text" name="gym-name" id="gym-name" />
           </div>
+          <div>
+            <label for="country">Country</label>
+            <select name="" id="">
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Spain">Spain</option>
+              <option value="Germany">Germany</option>
+            </select>
+          </div>
+          <div>
+            <label for="type">Type</label>
+            <select name="" id="">
+              <option value="Big-box-gyms">Big box gyms</option>
+              <option value="Personal-training-gyms">
+                Personal training gyms
+              </option>
+              <option value="Women’s-gyms">Women’s gyms</option>
+              <option value="CrossFit-gyms">CrossFit gyms</option>
+              <option value="Powerlifting-gyms">Powerlifting gyms</option>
+            </select>
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <select name="" id="">
+              <option value="Big-box-gyms">Big box gyms</option>
+              <option value="Personal-training-gyms">
+                Personal training gyms
+              </option>
+              <option value="Women’s-gyms">Women’s gyms</option>
+              <option value="CrossFit-gyms">CrossFit gyms</option>
+              <option value="Powerlifting-gyms">Powerlifting gyms</option>
+            </select>
+          </div>
+          <button>Search</button>
+          <input type="reset" value="clear filters" />
         </form>
-        <button class="how-it text-bold-20">How it works</button>
-      </header>
-      <section class="steps flex">
-        <h3 class="text-bold-20">NearGYM works in four simple steps</h3>
-        <div class="steps-1 flex">
-          <div class="flex">
-            <img src="img/search.png" alt="search img" />
-            <h4>1-Search</h4>
-            <p>
-              It´s simple. On NearGYM homepage, enter the name of a GYM you are
-              interested for and click on search. Alternatively click on the
-              search link on the top menu to view the list of all GYMS.
-            </p>
-          </div>
-          <div class="flex">
-            <img src="img/locate.png" alt="locate img" />
-            <h4>2-Locate</h4>
-            <p>
-              Get to see where the school is located by clicking on the GYM
-              profile. It´s even more exciting. You con get directions from
-              anywhere in the country.
-            </p>
-          </div>
-          <div class="flex">
-            <img src="img/register.jpg" alt="register img" />
-            <h4>3-Register</h4>
-            <p>
-              Register in the GYM of your choice. Click on the REGISTER button
-              to get the register form. We also follow up on the register to
-              make sure you get a reply on time.
-            </p>
-          </div>
-          <div class="flex">
-            <img src="img/train.png" alt="train img" />
-            <h4>4-Train</h4>
-            <p>
-              Once you get the answer. You can now start training on the
-              schedule that the gym have and get a new healthy life.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="info-main flex-column">
-        <div class="find-gym flex-column">
-          <div>
-            <h3>Over 10.000 GYMS registered with us</h3>
-            <p>Find a gym by using filtered search engine.</p>
-            <button>Find a GYM</button>
-          </div>
-          <div><img class="rounded" src="img/gym-1.jpg" alt="img" /></div>
-        </div>
-        <div class="near-gym flex-column">
-          <div>
-            <h3>No need to search more un Google to fin a great GYM</h3>
-            <p>Just click on the search button and you´re all set.</p>
-            <button>Find a GYM near you</button>
-          </div>
-          <div><img class="rounded" src="img/google.png" alt="img" /></div>
-        </div>
-        <div class="a-a flex-column">
-          <div>
-            <h3>Anytime Anywhere Any way!</h3>
-            <p>
-              very conveniet platforms that cut cross any device including our
-              mobile ready web app and our mobile app soon to your app store.
-            </p>
-          </div>
-          <div><img class="cel" src="img/iPhoneX.png" alt="img" /></div>
-        </div>
       </section>
     </main>
     <footer>
