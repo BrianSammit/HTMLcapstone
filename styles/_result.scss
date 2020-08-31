@@ -1,0 +1,58 @@
+/*
+=======================================
+    varibles
+=======================================
+*/
+
+$principal-color: rgb(211, 86, 73);
+$grey-transparent: rgba(207, 203, 203, 0.7);
+
+.header-result {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
+
+  h2 {
+    color: rgb(159, 155, 156);
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 1005;
+    text-align: left;
+
+    div {
+      color: rgb(93, 102, 117);
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 5px;
+
+      label {
+        margin-bottom: 5px;
+      }
+    }
+
+    button {
+      color: white;
+      background-color: rgb(69, 125, 180);
+      border-radius: 3px;
+      box-shadow: none;
+      border: none;
+      width: fit-content;
+      padding: 5px;
+      margin: 10px 0 0 5px;
+    }
+
+    .input-clear {
+      color: white;
+      background-color: rgb(229, 169, 87);
+      border-radius: 3px;
+      box-shadow: none;
+      border: none;
+      width: fit-content;
+      padding: 5px;
+    }
+  }
+}

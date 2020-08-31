@@ -43,16 +43,17 @@
       </div>
     </nav>
     <main>
-      <section>
+      <header class="header-result flex-column">
         <h2>Filter by name, country, type, price:</h2>
         <form>
-          <div>
-            <label for="gym-name">Gym name</label>
-            <input type="text" name="gym-name" id="gym-name" />
+          <div class="flex-column">
+            <label for="gym-name">Gym name:</label>
+            <input type="text" name="gym-name" id="gym-name"  required/>
           </div>
-          <div>
-            <label for="country">Country</label>
-            <select name="" id="">
+          <div class="flex-column">
+            <label for="country">Country:</label>
+            <select name="" id="" required>
+              <option value=""></option>
               <option value="United States">United States</option>
               <option value="United Kingdom">United Kingdom</option>
               <option value="Colombia">Colombia</option>
@@ -60,9 +61,10 @@
               <option value="Germany">Germany</option>
             </select>
           </div>
-          <div>
-            <label for="type">Type</label>
-            <select name="" id="">
+          <div class="flex-column">
+            <label for="type">Type:</label>
+            <select name="" id="" required>
+              <option></option>
               <option value="Big-box-gyms">Big box gyms</option>
               <option value="Personal-training-gyms">
                 Personal training gyms
@@ -72,9 +74,10 @@
               <option value="Powerlifting-gyms">Powerlifting gyms</option>
             </select>
           </div>
-          <div>
-            <label for="price">Price</label>
-            <select name="" id="">
+          <div class="flex-column">
+            <label for="price">Price:</label>
+            <select name="" id=""  required>
+              <option value=""></option>
               <option value="Big-box-gyms">Big box gyms</option>
               <option value="Personal-training-gyms">
                 Personal training gyms
@@ -83,11 +86,11 @@
               <option value="CrossFit-gyms">CrossFit gyms</option>
               <option value="Powerlifting-gyms">Powerlifting gyms</option>
             </select>
-          </div>
+          </div class="flex-column">
           <button>Search</button>
-          <input type="reset" value="clear filters" />
+          <button class="input-clear" type="reset"><i class="fas fa-edit"></i>clear filters</button>
         </form>
-      </section>
+      </header>
     </main>
     <footer>
       <div class="container-footer">
