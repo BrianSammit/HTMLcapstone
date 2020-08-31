@@ -50,7 +50,12 @@
         <form class="flex-column">
           <h2 class="text-bold-20">Search by key word</h2>
           <div class="flex">
-            <input type="text" name="keyword" placeholder="e.g. Bodytech" />
+            <input
+              type="text"
+              name="keyword"
+              placeholder="e.g. Bodytech"
+              required
+            />
             <a href="pages/result.html" class="button search-but text-bold-20"
               >Search</a
             >
@@ -103,15 +108,15 @@
           <div>
             <h3>Over 10.000 GYMS registered with us</h3>
             <p>Find a gym by using filtered search engine.</p>
-            <button>Find a GYM</button>
+            <button><a href="pages/result.html"> Find a GYM</a></button>
           </div>
           <div><img class="rounded" src="img/gym-1.jpg" alt="img" /></div>
         </div>
         <div class="near-gym flex-column">
           <div>
-            <h3>No need to search more un Google to fin a great GYM</h3>
+            <h3>No need to search more in Google to fin a great GYM</h3>
             <p>Just click on the search button and you´re all set.</p>
-            <button>Find a GYM near you</button>
+            <button><a href="pages/gyms.html">Find a GYM near you</a></button>
           </div>
           <div><img class="rounded" src="img/google.png" alt="img" /></div>
         </div>
@@ -133,8 +138,8 @@
           <ul class="flex">
             <div class="li-1 flex">
               <div class="flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Seacrh</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/result.html">Seacrh</a></li>
               </div>
               <div class="flex">
                 <li><a href="#">About us </a></li>
@@ -159,10 +164,15 @@
         <div class="middle-footer flex">
           <div>
             <h3>Subscribe</h3>
-            <div class="flex search-but-fo">
-              <input type="text" name="keyword" placeholder="you@example.com" />
+            <form class="flex search-but-fo">
+              <input
+                type="text"
+                name="keyword"
+                placeholder="you@example.com"
+                required
+              />
               <button class="text-bold-20">Send</button>
-            </div>
+            </form>
           </div>
           <div>
             <h3>Contact</h3>

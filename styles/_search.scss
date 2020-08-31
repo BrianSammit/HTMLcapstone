@@ -268,9 +268,11 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
     .find-gym {
       background-color: $principal-color;
-
       button {
-        color: $principal-color;
+        a {
+          text-decoration: none;
+          color: $principal-color;
+        }
       }
     }
 
@@ -278,7 +280,10 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
       background-color: rgb(152, 164, 165);
 
       button {
-        color: rgb(152, 164, 165);
+        a {
+          text-decoration: none;
+          color: rgb(152, 164, 165);
+        }
       }
     }
 
