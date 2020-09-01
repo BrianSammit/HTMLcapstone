@@ -170,48 +170,6 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
     }
   }
 
-  .steps {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-
-    h3 {
-      color: $principal-color;
-      margin: 5%;
-      font-size: 20px;
-      text-transform: uppercase;
-    }
-
-    .steps-1 {
-      flex-direction: column;
-
-      div {
-        padding: 20px;
-        width: 100%;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        color: rgb(66, 66, 66);
-
-        img {
-          height: 50px;
-          width: 50px;
-        }
-
-        h4 {
-          padding: 20px;
-          font-size: 22px;
-        }
-
-        p {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-
   .info-main {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -314,6 +272,48 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
     .a-a {
       background-color: rgb(80, 155, 215);
+    }
+  }
+
+  .steps {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    h3 {
+      color: $principal-color;
+      margin: 5%;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .steps-1 {
+      flex-direction: column;
+
+      div {
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(66, 66, 66);
+
+        img {
+          height: 50px;
+          width: 50px;
+        }
+
+        h4 {
+          padding: 20px;
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 
