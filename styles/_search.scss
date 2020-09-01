@@ -9,7 +9,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
 /*
 ========================================
-     nav bar 
+     nav bar
 ========================================
 */
 
@@ -44,6 +44,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
   .icons-nav {
     margin: auto;
+
     ul {
       list-style: none;
 
@@ -79,6 +80,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
   @media (min-width: 1024px) {
     .icons-nav {
       margin: auto;
+
       ul {
         li {
           p {
@@ -183,6 +185,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
     .steps-1 {
       flex-direction: column;
+
       div {
         padding: 20px;
         width: 100%;
@@ -211,6 +214,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
 
   .info-main {
     font-family: Arial, Helvetica, sans-serif;
+
     div {
       display: flex;
       flex-direction: column;
@@ -300,6 +304,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
         width: fit-content;
         padding: 5px;
         margin-bottom: 15px;
+
         a {
           text-decoration: none;
           color: rgb(152, 164, 165);
@@ -355,6 +360,7 @@ $grey-transparent: rgba(207, 203, 203, 0.7);
       .steps-1 {
         flex-direction: row;
         flex-wrap: wrap;
+
         div {
           width: 50%;
           padding: 5%;
@@ -544,6 +550,7 @@ footer {
 
         li {
           padding: 15px 5px;
+
           a {
             font-size: 15px;
             color: rgb(138, 138, 138);
