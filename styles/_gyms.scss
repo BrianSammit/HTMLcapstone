@@ -8,6 +8,22 @@ $principal-color: rgb(211, 86, 73);
 $grey-transparent: rgba(207, 203, 203, 0.7);
 
 main {
+  .maps {
+    text-align: center;
+    width: 100%;
+
+    h2 {
+      color: $principal-color;
+      margin: 10px;
+    }
+
+    .map {
+      width: 90%;
+      border: 0;
+      margin-bottom: 20px;
+    }
+  }
+
   .header-gyms {
     text-align: center;
 
@@ -71,22 +87,6 @@ main {
     .div-2-header {
       margin: 10px;
       text-align: justify;
-    }
-  }
-
-  .maps {
-    text-align: center;
-    width: 100%;
-
-    h2 {
-      color: $principal-color;
-      margin: 10px;
-    }
-
-    .map {
-      width: 90%;
-      border: 0;
-      margin-bottom: 20px;
     }
   }
 
