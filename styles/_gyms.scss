@@ -18,6 +18,11 @@ main {
       box-shadow: 0 0 0 5px $grey-transparent;
 
       h2 {
+        color: $principal-color;
+        margin: 10px;
+      }
+
+      h2 {
         margin-top: 20px;
         color: $principal-color;
       }
@@ -77,11 +82,6 @@ main {
   .maps {
     text-align: center;
     width: 100%;
-
-    h2 {
-      color: $principal-color;
-      margin: 10px;
-    }
 
     .map {
       width: 90%;
