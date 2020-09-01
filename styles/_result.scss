@@ -38,15 +38,17 @@ main {
         }
       }
 
-      button {
+      .button {
+        font-size: 13.3333px;
+        text-transform: capitalize;
+        text-decoration: none;
         color: white;
         background-color: rgb(69, 125, 180);
         border-radius: 3px;
         box-shadow: none;
         border: none;
-        width: fit-content;
         padding: 5px;
-        margin: 10px 0 0 5px;
+
         height: 30px;
 
         a {
@@ -56,12 +58,12 @@ main {
       }
 
       .input-clear {
+        text-transform: capitalize;
         color: white;
         background-color: rgb(229, 169, 87);
         border-radius: 3px;
         box-shadow: none;
         border: none;
-        width: fit-content;
         padding: 5px;
       }
     }
@@ -128,12 +130,15 @@ main {
 
       .buttons {
         display: flex;
+        height: 40px;
+        margin-top: 20px;
 
-        button {
-          margin-top: 22px;
+        .button {
+          padding: 6px;
         }
 
         .input-clear {
+          margin-left: 10px;
           width: max-content;
         }
       }
