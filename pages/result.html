@@ -48,25 +48,38 @@
         <form class="flex-column">
           <div class="flex-column">
             <label for="gym-name">Gym name:</label>
-            <input type="text" name="gym-name" id="gym-name"  required/>
+            <input type="text" name="gym-name" id="gym-name" required />
           </div>
           <div class="flex-column">
-            <label for="country">Country:</label>
-            <select name="" id="" required>
-              <option value=""></option>
-              <option value="United States">United States</option>
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="Colombia">Colombia</option>
-              <option value="Spain">Spain</option>
-              <option value="Germany">Germany</option>
+            <label>Country:</label>
+            <select>
+              <option value="country">&nbsp;</option>
+              <option value="united-states">United States</option>
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="colombia">Colombia</option>
+              <option value="spain">Spain</option>
+              <option value="germany">Germany</option>
             </select>
           </div>
           <div class="flex-column">
-            <label for="type">Type:</label>
-            <select name="" id="" required>
-              <option></option>
-              <option value="Big-box-gyms">Big box gyms</option>
-              <option value="Personal-training-gyms">
+            <label>Type:</label>
+            <select>
+              <option value="type">&nbsp;</option>
+              <option value="big-box-gyms">Big box gyms</option>
+              <option value="personal-training-gyms">
+                Personal training gyms
+              </option>
+              <option value="women’s-gyms">Women’s gyms</option>
+              <option value="crossFit-gyms">CrossFit gyms</option>
+              <option value="powerlifting-gyms">Powerlifting gyms</option>
+            </select>
+          </div>
+          <div class="flex-column">
+            <label>Price:</label>
+            <select>
+              <option value="price">&nbsp;</option>
+              <option value="big-box-gyms">Big box gyms</option>
+              <option value="personal-training-gyms">
                 Personal training gyms
               </option>
               <option value="Women’s-gyms">Women’s gyms</option>
@@ -74,35 +87,26 @@
               <option value="Powerlifting-gyms">Powerlifting gyms</option>
             </select>
           </div>
-          <div class="flex-column">
-            <label for="price">Price:</label>
-            <select name="" id=""  required>
-              <option value=""></option>
-              <option value="Big-box-gyms">Big box gyms</option>
-              <option value="Personal-training-gyms">
-                Personal training gyms
-              </option>
-              <option value="Women’s-gyms">Women’s gyms</option>
-              <option value="CrossFit-gyms">CrossFit gyms</option>
-              <option value="Powerlifting-gyms">Powerlifting gyms</option>
-            </select>
-          </div class="flex-column">
           <div class="buttons">
-            <button><a href="../pages/gyms-result.htm">Search</a></button>
-            <button class="input-clear" type="reset"><i class="fas fa-edit"></i>clear filters</button>
+            <button type="button">
+              <a href="../pages/gyms-result.htm">Search</a>
+            </button>
+            <button type="reset" class="input-clear">
+              <i class="fas fa-edit"></i>clear filters
+            </button>
           </div>
         </form>
       </header>
       <section class="section-result-search flex-column">
-        <h2>Filter so you can get a better result for you </h2>
-        <img src="../img/training.jpg" alt="">
+        <h2>Filter so you can get a better result for you</h2>
+        <img src="../img/training.jpg" alt="" />
       </section>
     </main>
     <footer>
       <div class="container-footer">
         <div class="header-footer flex">
           <ul class="flex">
-            <div class="li-1 flex">
+            <li class="li-1 flex">
               <div class="flex">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/result.html">Seacrh</a></li>
@@ -111,11 +115,11 @@
                 <li><a href="#">About us </a></li>
                 <li><a href="#">Advertise</a></li>
               </div>
-            </div>
+            </li>
             <li>
               <a href="../index.html"><i class="fas fa-map-marker-alt"></i></a>
             </li>
-            <div class="li-2 flex">
+            <li class="li-2 flex">
               <div class="flex">
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
@@ -124,15 +128,20 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Google +</a></li>
               </div>
-            </div>
+            </li>
           </ul>
         </div>
         <div class="middle-footer flex">
           <div>
             <h3>Subscribe</h3>
             <form class="flex search-but-fo">
-              <input type="text" name="keyword" placeholder="you@example.com" required/>
-              <button class="text-bold-20">Send</button>
+              <input
+                type="text"
+                name="keyword"
+                placeholder="you@example.com"
+                required
+              />
+              <button type="button" class="text-bold-20">Send</button>
             </form>
           </div>
           <div>

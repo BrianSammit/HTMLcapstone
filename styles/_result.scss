@@ -89,6 +89,20 @@ main {
       }
     }
   }
+  .section-result-search {
+    text-align: center;
+    margin: 20px;
+
+    h2 {
+      color: $principal-color;
+      margin: 20px;
+    }
+
+    img {
+      width: 80%;
+      margin: auto;
+    }
+  }
 
   @media (min-width: 768px) {
     .header-result {
@@ -123,21 +137,6 @@ main {
           width: max-content;
         }
       }
-    }
-  }
-
-  .section-result-search {
-    text-align: center;
-    margin: 20px;
-
-    h2 {
-      color: $principal-color;
-      margin: 20px;
-    }
-
-    img {
-      width: 60%;
-      margin: auto;
     }
   }
 }

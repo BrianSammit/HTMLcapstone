@@ -48,12 +48,12 @@
         <form class="flex-column">
           <div class="flex-column">
             <label for="gym-name">Gym name:</label>
-            <input type="text" name="gym-name" id="gym-name"  required/>
+            <input type="text" name="gym-name" id="gym-name" required />
           </div>
           <div class="flex-column">
-            <label for="country">Country:</label>
-            <select name="" id="" required>
-              <option value=""></option>
+            <label>Country:</label>
+            <select required>
+              <option disabled="disabled">Select the country</option>
               <option value="United States">United States</option>
               <option value="United Kingdom">United Kingdom</option>
               <option value="Colombia">Colombia</option>
@@ -62,9 +62,9 @@
             </select>
           </div>
           <div class="flex-column">
-            <label for="type">Type:</label>
-            <select name="" id="" required>
-              <option></option>
+            <label>Type:</label>
+            <select required>
+              <option disabled="disabled">Select the type</option>
               <option value="Big-box-gyms">Big box gyms</option>
               <option value="Personal-training-gyms">
                 Personal training gyms
@@ -75,9 +75,11 @@
             </select>
           </div>
           <div class="flex-column">
-            <label for="price">Price:</label>
-            <select name="" id=""  required>
-              <option value=""></option>
+            <label>Price:</label>
+            <select required>
+              <option selected="true" disabled="disabled">
+                Select the price
+              </option>
               <option value="Big-box-gyms">Big box gyms</option>
               <option value="Personal-training-gyms">
                 Personal training gyms
@@ -86,30 +88,66 @@
               <option value="CrossFit-gyms">CrossFit gyms</option>
               <option value="Powerlifting-gyms">Powerlifting gyms</option>
             </select>
-          </div class="flex-column">
+          </div>
           <div class="buttons">
-            <button>Search</button>
-            <button class="input-clear" type="reset"><i class="fas fa-edit"></i>clear filters</button>
+            <button type="button">Search</button>
+            <button class="input-clear" type="reset">
+              <i class="fas fa-edit"></i>clear filters
+            </button>
           </div>
         </form>
       </header>
       <section class="section-result flex-column">
-        <h2>Search Result Found 7 GYM(S).</h2>
+        <h2>Search Result Found 8 GYM(S).</h2>
         <div class="container-result">
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
-          <div><a href="../pages/gyms.html"><img src="../img/intencity.jpg" alt="img-gym"></a>
-          <h4>Name:GYM</h4></div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
+          <div>
+            <a href="../pages/gyms.html"
+              ><img src="../img/intencity.jpg" alt="img-gym"
+            /></a>
+            <h4>Name:GYM</h4>
+          </div>
         </div>
       </section>
     </main>
@@ -146,8 +184,13 @@
           <div>
             <h3>Subscribe</h3>
             <form class="flex search-but-fo">
-              <input type="text" name="keyword" placeholder="you@example.com" required/>
-              <button class="text-bold-20">Send</button>
+              <input
+                type="text"
+                name="keyword"
+                placeholder="you@example.com"
+                required
+              />
+              <button type="button" class="text-bold-20">Send</button>
             </form>
           </div>
           <div>
