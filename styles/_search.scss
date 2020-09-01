@@ -444,46 +444,37 @@ footer {
     display: flex;
     flex-direction: column;
 
+    .bottom-footer {
+      display: flex;
+      width: 100%;
+      background-color: rgb(49, 49, 49);
+      justify-content: space-between;
+
+      ul {
+        display: flex;
+        list-style: none;
+        padding-left: 10px;
+
+        li {
+          padding: 15px 5px;
+
+          a {
+            font-size: 15px;
+            color: rgb(138, 138, 138);
+          }
+        }
+      }
+
+      p {
+        padding: 15px;
+        color: rgb(138, 138, 138);
+      }
+    }
+
     .container-footer {
       width: 90%;
       margin: auto;
       padding: 0 10px;
-
-      .header-footer {
-        width: 100%;
-        margin: 30px 10px 15px;
-
-        .ul {
-          align-content: center;
-          justify-content: space-between;
-          border-top: 1px solid rgb(41, 41, 41);
-          border-bottom: 1px solid rgb(41, 41, 41);
-          list-style: none;
-          height: 30px;
-
-          .li-1,
-          .li-2 {
-            div {
-              width: 100%;
-              flex-direction: row;
-            }
-
-            .fa-map-marker-alt {
-              background-color: black;
-              border-radius: 50%;
-              padding: 20px;
-              font-size: 25px;
-              border: 1px solid rgb(41, 41, 41);
-            }
-
-            a {
-              text-decoration: none;
-              font-size: 15px;
-              color: white;
-            }
-          }
-        }
-      }
 
       .middle-footer {
         display: flex;
@@ -535,32 +526,41 @@ footer {
           }
         }
       }
-    }
 
-    .bottom-footer {
-      display: flex;
-      width: 100%;
-      background-color: rgb(49, 49, 49);
-      justify-content: space-between;
+      .header-footer {
+        width: 100%;
+        margin: 30px 10px 15px;
 
-      ul {
-        display: flex;
-        list-style: none;
-        padding-left: 10px;
+        .ul {
+          align-content: center;
+          justify-content: space-between;
+          border-top: 1px solid rgb(41, 41, 41);
+          border-bottom: 1px solid rgb(41, 41, 41);
+          list-style: none;
+          height: 30px;
 
-        li {
-          padding: 15px 5px;
+          .li-1,
+          .li-2 {
+            div {
+              width: 100%;
+              flex-direction: row;
+            }
 
-          a {
-            font-size: 15px;
-            color: rgb(138, 138, 138);
+            .fa-map-marker-alt {
+              background-color: black;
+              border-radius: 50%;
+              padding: 20px;
+              font-size: 25px;
+              border: 1px solid rgb(41, 41, 41);
+            }
+
+            a {
+              text-decoration: none;
+              font-size: 15px;
+              color: white;
+            }
           }
         }
-      }
-
-      p {
-        padding: 15px;
-        color: rgb(138, 138, 138);
       }
     }
   }
