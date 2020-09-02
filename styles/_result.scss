@@ -1,0 +1,148 @@
+/*
+=======================================
+    varibles
+=======================================
+*/
+
+$principal-color: rgb(211, 86, 73);
+$grey-transparent: rgba(207, 203, 203, 0.7);
+
+main {
+  .section-result-search {
+    text-align: center;
+    margin: 20px;
+
+    h2 {
+      color: $principal-color;
+      margin: 20px;
+    }
+
+    img {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  .section-result {
+    margin: 20px 0;
+    text-align: center;
+
+    h2 {
+      font-size: 26px;
+      color: rgb(159, 155, 156);
+      margin: 20px;
+    }
+
+    div {
+      text-align: center;
+      position: relative;
+      display: inline-block;
+
+      img {
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header-result {
+      form {
+        margin: auto;
+        width: 80%;
+      }
+    }
+
+    .section-result {
+      .container-result {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .header-result {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+
+    h1 {
+      color: rgb(159, 155, 156);
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: left;
+
+      div {
+        color: rgb(93, 102, 117);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px;
+
+        label {
+          margin-bottom: 5px;
+        }
+
+        select,
+        input {
+          height: 30px;
+        }
+      }
+
+      .button {
+        font-size: 13.3333px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(69, 125, 180);
+        border-radius: 3px;
+        box-shadow: none;
+        border: none;
+        padding: 5px;
+        height: 30px;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .input-clear {
+        text-transform: capitalize;
+        color: white;
+        background-color: rgb(229, 169, 87);
+        border-radius: 3px;
+        box-shadow: none;
+        border: none;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-result {
+    form {
+      justify-content: center;
+      flex-direction: row;
+
+      .buttons {
+        display: flex;
+        height: 40px;
+        margin-top: 20px;
+
+        .button {
+          padding: 6px;
+        }
+
+        .input-clear {
+          margin-left: 10px;
+          width: max-content;
+        }
+      }
+    }
+  }
+}
