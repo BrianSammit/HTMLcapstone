@@ -1,7 +1,7 @@
 # Capstone project
 
 This project is a directory page that helps people to find a great GYM wherever they want. It uses the same design from the project Patashule.  [link of the original project](https://www.behance.net/gallery/25563385/PatashuleKE).
-The page has a main page, a filters page, and information of the gym selected. 
+The page has a main page, a filters page, and information about the gym selected. 
 
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot-1.png)
