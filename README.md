@@ -15,7 +15,7 @@ The page has a main page, a filters page, and information about the gym selected
  - GitHub
 
 ## Demo Link:
-[You can find the project live here](https://rawcdn.githack.com/BrianSammit/capstone/305099b1366f0feb6d97d2a277987dcbfbe95c8a/index.html)
+[live demo](https://rawcdn.githack.com/BrianSammit/capstone/305099b1366f0feb6d97d2a277987dcbfbe95c8a/index.html)
 
 ## Authors  
 
